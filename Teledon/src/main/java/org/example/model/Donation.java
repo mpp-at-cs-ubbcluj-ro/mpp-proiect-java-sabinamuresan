@@ -1,32 +1,32 @@
 package org.example.model;
 
 public class Donation extends Entity<Integer>{
-    private Case caseToDonate;
-    private Donor donor;
+    private int idCase;
+    private int idDonor;
     private float amount;
 
-    public Donation(int id, Case caseToDonate, Donor donor, float amount) {
+    public Donation(int id, int idCase, int idDonor, float amount) {
         super(id);
-        this.caseToDonate = caseToDonate;
-        this.donor = donor;
+        this.idCase = idCase;
+        this.idDonor = idDonor;
         this.amount = amount;
 
     }
 
-    public Case getCaseToDonate() {
-        return caseToDonate;
+    public int getIdCase() {
+        return idCase;
     }
 
-    public void setCaseToDonate(Case caseToDonate) {
-        this.caseToDonate = caseToDonate;
+    public void setCaseToDonate(int id) {
+        this.idCase = id;
     }
 
-    public Donor getDonor() {
-        return donor;
+    public int getIdDonor() {
+        return idDonor;
     }
 
-    public void setDonor(Donor donor) {
-        this.donor = donor;
+    public void setDonor(int idDonor) {
+        this.idDonor = idDonor;
     }
 
     public float getAmount() {
@@ -35,5 +35,14 @@ public class Donation extends Entity<Integer>{
 
     public void setAmount(float amount) {
         this.amount = amount;
+    }
+
+    @Override
+    public String toString() {
+        return "Donation{" +
+                "idCase=" + idCase +
+                ", idDonor=" + idDonor +
+                ", amount=" + amount +
+                '}';
     }
 }

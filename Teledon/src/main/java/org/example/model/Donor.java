@@ -36,4 +36,13 @@ public class Donor extends Entity<Integer>{
     public void setDonorPhoneNumber(String donorPhoneNumber) {
         this.donorPhoneNumber = donorPhoneNumber;
     }
+
+    @Override
+    public String toString() {
+        return "Donor{" +
+                "donorName='" + donorName + '\'' +
+                ", donorAddress='" + donorAddress + '\'' +
+                ", donorPhoneNumber='" + donorPhoneNumber + '\'' +
+                '}';
+    }
 }

@@ -24,4 +24,12 @@ public class Case extends Entity<Integer>{
     public void setCaseName(String caseName) {
         this.caseName = caseName;
     }
+
+    @Override
+    public String toString() {
+        return "Case{" +
+                "caseName='" + caseName + '\'' +
+                ", sum=" + sum +
+                '}';
+    }
 }
