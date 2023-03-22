@@ -1,0 +1,43 @@
+22 Mar 2023 08:50:24,034 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+22 Mar 2023 08:50:24,039 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+22 Mar 2023 08:50:24,039 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+22 Mar 2023 08:50:24,039 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+22 Mar 2023 08:50:24,039 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+22 Mar 2023 08:50:24,040 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+22 Mar 2023 08:50:24,040 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+22 Mar 2023 08:50:24,212 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@59402b8f)
+22 Mar 2023 08:50:24,222 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+22 Mar 2023 08:50:24,223 TRACE org.example.repository.CaseDbRepository 27 findOne - Enter
+22 Mar 2023 08:50:24,223 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+22 Mar 2023 08:50:24,223 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@59402b8f)
+22 Mar 2023 08:50:24,225 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+22 Mar 2023 08:50:24,229 TRACE org.example.repository.DonationDbRepository 56 add - Enter saving donation Donation{idCase=2, idDonor=2, amount=760.0} 
+22 Mar 2023 08:50:24,230 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+22 Mar 2023 08:50:24,230 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+22 Mar 2023 08:50:24,230 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+22 Mar 2023 08:50:24,230 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+22 Mar 2023 08:50:24,230 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+22 Mar 2023 08:50:24,231 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3ad83a66)
+22 Mar 2023 08:50:24,245 TRACE org.example.repository.DonationDbRepository 63 add - Saved 1 instances
+22 Mar 2023 08:50:24,245 TRACE org.example.repository.DonationDbRepository 68 add - Exit
+22 Mar 2023 08:50:24,245 TRACE org.example.repository.DonationDbRepository 32 getAll - Enter
+22 Mar 2023 08:50:24,245 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+22 Mar 2023 08:50:24,245 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3ad83a66)
+22 Mar 2023 08:50:24,246 TRACE org.example.repository.DonationDbRepository 50 getAll - Exit with([Donation{idCase=1, idDonor=1, amount=215.0}, Donation{idCase=2, idDonor=1, amount=1000.0}, Donation{idCase=3, idDonor=3, amount=500.0}, Donation{idCase=1, idDonor=4, amount=80.0}, Donation{idCase=2, idDonor=2, amount=760.0}, Donation{idCase=2, idDonor=3, amount=120.0}, Donation{idCase=2, idDonor=3, amount=120.0}, Donation{idCase=2, idDonor=2, amount=760.0}, Donation{idCase=2, idDonor=2, amount=760.0}])
+22 Mar 2023 08:50:24,247 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+22 Mar 2023 08:50:24,248 TRACE org.example.repository.DonorDbRepository 39 add - Enter saving donor Donor{donorName='Marius Moldovan', donorAddress='Bucuresti 22', donorPhoneNumber='0754266798'} 
+22 Mar 2023 08:50:24,248 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+22 Mar 2023 08:50:24,248 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+22 Mar 2023 08:50:24,248 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+22 Mar 2023 08:50:24,249 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+22 Mar 2023 08:50:24,249 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+22 Mar 2023 08:50:24,254 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@26abb146)
+22 Mar 2023 08:50:24,262 TRACE org.example.repository.DonorDbRepository 46 add - Saved 1 instances
+22 Mar 2023 08:50:24,262 TRACE org.example.repository.DonorDbRepository 51 add - Exit
+22 Mar 2023 08:50:24,263 TRACE org.example.repository.CaseDbRepository 27 findOne - Enter
+22 Mar 2023 08:50:24,263 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+22 Mar 2023 08:50:24,263 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@59402b8f)
+22 Mar 2023 08:50:24,264 TRACE org.example.repository.DonorDbRepository 67 getDonorsForCase - Enter
+22 Mar 2023 08:50:24,264 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+22 Mar 2023 08:50:24,264 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@26abb146)
+22 Mar 2023 08:50:24,265 TRACE org.example.repository.DonorDbRepository 86 getDonorsForCase - Exit with([Donor{donorName='Maria Adam', donorAddress='Albac 16', donorPhoneNumber='0766432411'}, Donor{donorName='Bogdan Marginean', donorAddress='Crizantemelor 1', donorPhoneNumber='0756900217'}])
