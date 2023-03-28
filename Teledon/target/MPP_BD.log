@@ -41,3 +41,964 @@
 22 Mar 2023 08:50:24,264 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
 22 Mar 2023 08:50:24,264 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@26abb146)
 22 Mar 2023 08:50:24,265 TRACE org.example.repository.DonorDbRepository 86 getDonorsForCase - Exit with([Donor{donorName='Maria Adam', donorAddress='Albac 16', donorPhoneNumber='0766432411'}, Donor{donorName='Bogdan Marginean', donorAddress='Crizantemelor 1', donorPhoneNumber='0756900217'}])
+28 Mar 2023 10:31:13,770 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 10:31:13,775 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+28 Mar 2023 10:31:13,775 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 10:31:13,775 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 10:31:13,776 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 10:31:13,776 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 10:31:13,777 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 10:31:14,008 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@59402b8f)
+28 Mar 2023 10:31:14,020 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+28 Mar 2023 10:31:14,021 TRACE org.example.repository.CaseDbRepository 27 findOne - Enter
+28 Mar 2023 10:31:14,021 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 10:31:14,022 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@59402b8f)
+28 Mar 2023 10:31:14,023 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 10:31:14,027 TRACE org.example.repository.DonationDbRepository 56 add - Enter saving donation Donation{idCase=2, idDonor=2, amount=760.0} 
+28 Mar 2023 10:31:14,027 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 10:31:14,027 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 10:31:14,028 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 10:31:14,028 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 10:31:14,028 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 10:31:14,029 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3ad83a66)
+28 Mar 2023 10:31:14,039 TRACE org.example.repository.DonationDbRepository 63 add - Saved 1 instances
+28 Mar 2023 10:31:14,040 TRACE org.example.repository.DonationDbRepository 68 add - Exit
+28 Mar 2023 10:31:14,040 TRACE org.example.repository.DonationDbRepository 32 getAll - Enter
+28 Mar 2023 10:31:14,040 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 10:31:14,041 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3ad83a66)
+28 Mar 2023 10:31:14,042 TRACE org.example.repository.DonationDbRepository 50 getAll - Exit with([Donation{idCase=1, idDonor=1, amount=215.0}, Donation{idCase=2, idDonor=1, amount=1000.0}, Donation{idCase=3, idDonor=3, amount=500.0}, Donation{idCase=1, idDonor=4, amount=80.0}, Donation{idCase=2, idDonor=2, amount=760.0}, Donation{idCase=2, idDonor=3, amount=120.0}, Donation{idCase=2, idDonor=3, amount=120.0}, Donation{idCase=2, idDonor=2, amount=760.0}, Donation{idCase=2, idDonor=2, amount=760.0}, Donation{idCase=2, idDonor=2, amount=760.0}])
+28 Mar 2023 10:31:14,044 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 10:31:14,044 TRACE org.example.repository.DonorDbRepository 39 add - Enter saving donor Donor{donorName='Marius Moldovan', donorAddress='Bucuresti 22', donorPhoneNumber='0754266798'} 
+28 Mar 2023 10:31:14,045 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 10:31:14,045 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 10:31:14,045 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 10:31:14,045 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 10:31:14,046 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 10:31:14,051 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@26abb146)
+28 Mar 2023 10:31:14,059 TRACE org.example.repository.DonorDbRepository 46 add - Saved 1 instances
+28 Mar 2023 10:31:14,060 TRACE org.example.repository.DonorDbRepository 51 add - Exit
+28 Mar 2023 10:31:14,060 TRACE org.example.repository.CaseDbRepository 27 findOne - Enter
+28 Mar 2023 10:31:14,060 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 10:31:14,060 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@59402b8f)
+28 Mar 2023 10:31:14,061 TRACE org.example.repository.DonorDbRepository 67 getDonorsForCase - Enter
+28 Mar 2023 10:31:14,061 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 10:31:14,061 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@26abb146)
+28 Mar 2023 10:31:14,062 TRACE org.example.repository.DonorDbRepository 86 getDonorsForCase - Exit with([Donor{donorName='Maria Adam', donorAddress='Albac 16', donorPhoneNumber='0766432411'}, Donor{donorName='Bogdan Marginean', donorAddress='Crizantemelor 1', donorPhoneNumber='0756900217'}])
+28 Mar 2023 10:31:14,063 TRACE org.example.repository.DonorDbRepository 91 findByName - Enter
+28 Mar 2023 10:31:14,063 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 10:31:14,063 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@26abb146)
+28 Mar 2023 11:28:18,279 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 11:28:18,284 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+28 Mar 2023 11:28:18,284 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 11:28:18,284 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 11:28:18,284 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 11:28:18,285 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 11:28:18,285 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 11:28:18,572 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@239a307b)
+28 Mar 2023 11:28:18,593 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+28 Mar 2023 11:28:18,594 TRACE org.example.repository.CaseDbRepository 27 findOne - Enter
+28 Mar 2023 11:28:18,594 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 11:28:18,594 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@239a307b)
+28 Mar 2023 11:28:18,596 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 11:28:18,601 TRACE org.example.repository.DonationDbRepository 56 add - Enter saving donation Donation{idCase=2, idDonor=2, amount=760.0} 
+28 Mar 2023 11:28:18,601 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 11:28:18,601 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 11:28:18,601 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 11:28:18,602 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 11:28:18,602 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 11:28:18,603 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2657d4dd)
+28 Mar 2023 11:28:18,613 TRACE org.example.repository.DonationDbRepository 63 add - Saved 1 instances
+28 Mar 2023 11:28:18,613 TRACE org.example.repository.DonationDbRepository 68 add - Exit
+28 Mar 2023 11:28:18,614 TRACE org.example.repository.DonationDbRepository 32 getAll - Enter
+28 Mar 2023 11:28:18,614 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 11:28:18,614 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2657d4dd)
+28 Mar 2023 11:28:18,615 TRACE org.example.repository.DonationDbRepository 50 getAll - Exit with([Donation{idCase=1, idDonor=1, amount=215.0}, Donation{idCase=2, idDonor=1, amount=1000.0}, Donation{idCase=3, idDonor=3, amount=500.0}, Donation{idCase=1, idDonor=4, amount=80.0}, Donation{idCase=2, idDonor=2, amount=760.0}, Donation{idCase=2, idDonor=3, amount=120.0}, Donation{idCase=2, idDonor=3, amount=120.0}, Donation{idCase=2, idDonor=2, amount=760.0}, Donation{idCase=2, idDonor=2, amount=760.0}, Donation{idCase=2, idDonor=2, amount=760.0}, Donation{idCase=2, idDonor=2, amount=760.0}])
+28 Mar 2023 11:28:18,617 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 11:28:18,618 TRACE org.example.repository.DonorDbRepository 39 add - Enter saving donor Donor{donorName='Marius Moldovan', donorAddress='Bucuresti 22', donorPhoneNumber='0754266798'} 
+28 Mar 2023 11:28:18,618 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 11:28:18,618 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 11:28:18,618 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 11:28:18,618 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 11:28:18,618 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 11:28:18,624 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5276d6ee)
+28 Mar 2023 11:28:18,631 TRACE org.example.repository.DonorDbRepository 46 add - Saved 1 instances
+28 Mar 2023 11:28:18,631 TRACE org.example.repository.DonorDbRepository 51 add - Exit
+28 Mar 2023 11:28:18,632 TRACE org.example.repository.CaseDbRepository 27 findOne - Enter
+28 Mar 2023 11:28:18,632 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 11:28:18,632 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@239a307b)
+28 Mar 2023 11:28:18,633 TRACE org.example.repository.DonorDbRepository 67 getDonorsForCase - Enter
+28 Mar 2023 11:28:18,633 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 11:28:18,633 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5276d6ee)
+28 Mar 2023 11:28:18,634 TRACE org.example.repository.DonorDbRepository 86 getDonorsForCase - Exit with([Donor{donorName='Maria Adam', donorAddress='Albac 16', donorPhoneNumber='0766432411'}, Donor{donorName='Bogdan Marginean', donorAddress='Crizantemelor 1', donorPhoneNumber='0756900217'}])
+28 Mar 2023 11:28:18,634 TRACE org.example.repository.DonorDbRepository 91 findByName - Enter
+28 Mar 2023 11:28:18,634 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 11:28:18,634 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5276d6ee)
+28 Mar 2023 11:28:18,637 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 11:28:18,637 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+28 Mar 2023 11:28:18,637 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 11:28:18,637 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 11:28:18,637 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 11:28:18,637 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 11:28:18,637 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 11:28:18,642 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7fb4f2a9)
+28 Mar 2023 11:37:45,652 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 11:37:45,655 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 11:37:45,656 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 11:37:45,657 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 12:15:53,421 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 12:15:53,424 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 12:15:53,425 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 12:15:53,426 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:27:05,169 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:27:05,174 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:27:05,175 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:27:05,176 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:44:28,159 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:44:28,162 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:44:28,163 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:44:28,164 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:46:57,315 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:47:11,529 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:47:12,572 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:47:13,638 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:48:20,383 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:48:20,386 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:48:20,387 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:48:20,388 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:48:40,903 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:48:41,631 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:48:42,300 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:48:42,912 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:49:38,197 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:49:38,200 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:49:38,201 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:49:38,202 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:50:07,838 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:50:07,846 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:50:07,848 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:50:07,850 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:58:30,821 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:58:30,823 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:58:30,824 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 13:58:30,825 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:00:59,201 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:00:59,204 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:00:59,205 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:00:59,205 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:01:42,877 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:01:42,881 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:01:42,882 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:01:42,883 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:02:02,921 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:02:02,924 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:02:02,925 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:02:02,926 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:03:48,758 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:03:48,761 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:03:48,762 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:03:48,763 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:45:55,442 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:45:55,449 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:45:55,453 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:45:55,454 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:46:14,138 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+28 Mar 2023 14:46:14,138 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 14:46:14,138 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 14:46:14,139 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 14:46:14,139 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 14:46:14,139 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 14:46:14,307 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7f89cdfa)
+28 Mar 2023 14:46:47,558 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:46:47,561 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:46:47,562 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 14:46:47,562 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 15:14:41,287 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 15:14:41,291 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 15:14:41,292 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 15:14:41,293 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 15:14:49,062 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+28 Mar 2023 15:14:49,062 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 15:14:49,062 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 15:14:49,062 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 15:14:49,062 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 15:14:49,062 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 15:14:49,187 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@37cd0dd1)
+28 Mar 2023 15:15:18,431 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 15:15:18,435 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 15:15:18,436 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 15:15:18,436 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 15:15:26,545 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+28 Mar 2023 15:15:26,546 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 15:15:26,546 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 15:15:26,546 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 15:15:26,546 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 15:15:26,547 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 15:15:26,670 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@37cd0dd1)
+28 Mar 2023 15:15:38,453 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 15:15:38,457 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 15:15:38,459 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 15:15:38,459 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 19:34:49,848 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 19:34:49,853 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 19:34:49,855 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 19:34:49,856 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 19:35:23,243 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+28 Mar 2023 19:35:23,246 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 19:35:23,247 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 19:35:23,249 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 19:35:23,251 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 19:35:23,252 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 19:35:26,259 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5946546b)
+28 Mar 2023 19:40:34,478 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 19:40:34,481 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 19:40:34,482 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 19:40:34,484 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 19:40:41,963 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+28 Mar 2023 19:40:41,964 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 19:40:41,964 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 19:40:41,964 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 19:40:41,964 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 19:40:41,965 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 19:40:42,101 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3b07a196)
+28 Mar 2023 19:42:04,229 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 19:42:04,233 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 19:42:04,235 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 19:42:04,237 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 19:42:29,263 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+28 Mar 2023 19:42:29,265 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 19:42:29,267 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 19:42:29,268 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 19:42:29,271 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 19:42:29,274 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 19:42:32,236 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5946546b)
+28 Mar 2023 21:14:17,893 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:14:17,896 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:14:17,897 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:14:17,898 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:14:17,899 TRACE org.example.repository.CaseDbRepository 27 findOne - Enter
+28 Mar 2023 21:14:17,899 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 21:14:17,899 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 21:14:17,899 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 21:14:17,899 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 21:14:17,900 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 21:14:18,082 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@796036ce)
+28 Mar 2023 21:15:39,654 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:15:39,658 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:15:39,660 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:15:39,661 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:15:39,661 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+28 Mar 2023 21:15:39,662 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 21:15:39,662 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 21:15:39,662 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 21:15:39,662 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 21:15:39,663 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 21:15:39,815 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6e0dfd79)
+28 Mar 2023 21:15:39,829 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+28 Mar 2023 21:16:04,116 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:16:04,120 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:16:04,121 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:16:04,122 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:16:04,123 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+28 Mar 2023 21:16:04,123 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 21:16:04,123 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 21:16:04,124 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 21:16:04,124 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 21:16:04,124 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 21:16:04,275 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6e0dfd79)
+28 Mar 2023 21:16:04,287 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+28 Mar 2023 21:18:09,607 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:18:09,610 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:18:09,612 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:18:09,612 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:18:09,613 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+28 Mar 2023 21:18:09,613 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 21:18:09,614 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 21:18:09,614 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 21:18:09,614 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 21:18:09,614 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 21:18:09,759 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@e4323f5)
+28 Mar 2023 21:18:09,769 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+28 Mar 2023 21:18:54,824 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:18:54,829 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:18:54,831 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:18:54,833 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:19:14,770 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+28 Mar 2023 21:19:14,771 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 21:19:14,771 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 21:19:14,772 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 21:19:14,773 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 21:19:14,774 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 21:19:15,753 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1ffb3a3c)
+28 Mar 2023 21:19:51,233 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:19:51,236 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:19:51,237 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:19:51,238 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:20:00,005 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+28 Mar 2023 21:20:00,007 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 21:20:00,008 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 21:20:00,008 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 21:20:00,008 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 21:20:00,009 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 21:20:00,154 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@37cd0dd1)
+28 Mar 2023 21:20:00,192 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+28 Mar 2023 21:20:00,192 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 21:20:00,192 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 21:20:00,192 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 21:20:00,193 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 21:20:00,193 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 21:20:00,194 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5b9f93b2)
+28 Mar 2023 21:20:00,197 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+28 Mar 2023 21:30:59,636 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:30:59,650 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:30:59,651 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:30:59,652 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:31:09,615 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+28 Mar 2023 21:31:09,616 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 21:31:09,616 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 21:31:09,616 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 21:31:09,617 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 21:31:09,617 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 21:31:09,758 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@14fd950)
+28 Mar 2023 21:31:09,800 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+28 Mar 2023 21:31:09,800 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 21:31:09,801 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 21:31:09,801 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 21:31:09,801 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 21:31:09,801 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 21:31:09,802 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@48fc0c61)
+28 Mar 2023 21:31:09,806 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+28 Mar 2023 21:32:39,332 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:32:39,336 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:32:39,337 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:32:39,337 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 21:32:46,611 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+28 Mar 2023 21:32:46,611 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 21:32:46,613 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 21:32:46,613 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 21:32:46,613 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 21:32:46,613 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 21:32:46,761 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@14fd950)
+28 Mar 2023 21:32:46,803 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+28 Mar 2023 21:32:46,803 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 21:32:46,803 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 21:32:46,803 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 21:32:46,803 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 21:32:46,803 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 21:32:46,804 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@48fc0c61)
+28 Mar 2023 21:32:46,808 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+28 Mar 2023 23:04:43,978 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:04:43,992 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:04:43,994 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:04:43,995 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:04:51,714 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+28 Mar 2023 23:04:51,715 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 23:04:51,715 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 23:04:51,715 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 23:04:51,716 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 23:04:51,716 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 23:04:51,850 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@14fd950)
+28 Mar 2023 23:04:51,885 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+28 Mar 2023 23:04:51,885 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 23:04:51,886 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 23:04:51,886 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 23:04:51,886 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 23:04:51,886 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 23:04:51,887 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4906403e)
+28 Mar 2023 23:04:51,891 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+28 Mar 2023 23:05:08,034 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+28 Mar 2023 23:05:08,034 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 23:05:08,035 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@14fd950)
+28 Mar 2023 23:05:08,046 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+28 Mar 2023 23:05:08,046 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 23:05:08,046 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4906403e)
+28 Mar 2023 23:05:08,047 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+28 Mar 2023 23:16:33,422 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:16:33,426 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:16:33,427 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:16:33,427 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:16:41,380 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+28 Mar 2023 23:16:41,380 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 23:16:41,380 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 23:16:41,381 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 23:16:41,381 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 23:16:41,381 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 23:16:41,512 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@14fd950)
+28 Mar 2023 23:16:41,558 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+28 Mar 2023 23:16:41,558 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 23:16:41,558 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 23:16:41,558 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 23:16:41,559 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 23:16:41,559 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 23:16:41,559 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4906403e)
+28 Mar 2023 23:16:41,563 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+28 Mar 2023 23:17:53,888 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:17:53,892 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:17:53,893 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:17:53,894 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:18:18,155 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:18:18,160 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:18:18,161 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:18:18,163 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:18:26,617 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+28 Mar 2023 23:18:26,618 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 23:18:26,618 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 23:18:26,618 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 23:18:26,619 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 23:18:26,619 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 23:18:26,752 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@49882d5e)
+28 Mar 2023 23:18:26,806 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+28 Mar 2023 23:18:26,806 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 23:18:26,806 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 23:18:26,806 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 23:18:26,806 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 23:18:26,806 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 23:18:26,807 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2ff27c6f)
+28 Mar 2023 23:18:26,811 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+28 Mar 2023 23:19:12,413 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:19:12,417 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:19:12,418 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:19:12,419 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:19:22,385 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+28 Mar 2023 23:19:22,386 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 23:19:22,386 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 23:19:22,387 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 23:19:22,387 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 23:19:22,388 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 23:19:22,519 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@49882d5e)
+28 Mar 2023 23:19:22,528 TRACE org.example.repository.VolunteerDbRepository 70 findAccount - Exit
+28 Mar 2023 23:19:30,595 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+28 Mar 2023 23:19:30,596 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 23:19:30,596 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@49882d5e)
+28 Mar 2023 23:19:30,631 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+28 Mar 2023 23:19:30,631 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 23:19:30,631 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 23:19:30,632 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 23:19:30,632 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 23:19:30,632 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 23:19:30,633 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@138576fc)
+28 Mar 2023 23:19:30,637 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+28 Mar 2023 23:21:01,024 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:21:01,030 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:21:01,031 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:21:01,032 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:21:24,493 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+28 Mar 2023 23:21:24,493 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 23:21:24,494 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 23:21:24,494 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 23:21:24,495 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 23:21:24,495 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 23:21:24,631 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@49882d5e)
+28 Mar 2023 23:21:24,682 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+28 Mar 2023 23:21:24,682 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 23:21:24,682 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 23:21:24,682 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 23:21:24,683 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 23:21:24,683 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 23:21:24,684 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2ff27c6f)
+28 Mar 2023 23:21:24,687 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+28 Mar 2023 23:21:41,057 TRACE org.example.repository.CaseDbRepository 27 findOne - Enter
+28 Mar 2023 23:21:41,058 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 23:21:41,060 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2ff27c6f)
+28 Mar 2023 23:22:14,736 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:22:14,741 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:22:14,743 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:22:14,744 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+28 Mar 2023 23:22:31,491 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+28 Mar 2023 23:22:31,491 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 23:22:31,491 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 23:22:31,491 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 23:22:31,492 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 23:22:31,492 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 23:22:31,614 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@14fd950)
+28 Mar 2023 23:22:31,656 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+28 Mar 2023 23:22:31,656 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 23:22:31,656 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+28 Mar 2023 23:22:31,656 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+28 Mar 2023 23:22:31,656 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+28 Mar 2023 23:22:31,656 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+28 Mar 2023 23:22:31,658 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4906403e)
+28 Mar 2023 23:22:31,661 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+28 Mar 2023 23:22:35,171 TRACE org.example.repository.CaseDbRepository 27 findOne - Enter
+28 Mar 2023 23:22:35,171 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+28 Mar 2023 23:22:35,172 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4906403e)
+29 Mar 2023 00:04:09,083 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:04:09,087 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:04:09,089 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:04:09,091 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:04:17,404 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+29 Mar 2023 00:04:17,404 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:04:17,404 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:04:17,404 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:04:17,405 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:04:17,405 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:04:17,528 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@14fd950)
+29 Mar 2023 00:04:17,534 TRACE org.example.repository.VolunteerDbRepository 70 findAccount - Exit
+29 Mar 2023 00:04:25,217 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+29 Mar 2023 00:04:25,219 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:04:25,220 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@14fd950)
+29 Mar 2023 00:04:25,220 TRACE org.example.repository.VolunteerDbRepository 70 findAccount - Exit
+29 Mar 2023 00:04:42,901 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+29 Mar 2023 00:04:42,901 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:04:42,902 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@14fd950)
+29 Mar 2023 00:04:42,903 TRACE org.example.repository.VolunteerDbRepository 70 findAccount - Exit
+29 Mar 2023 00:06:45,728 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:06:45,731 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:06:45,732 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:06:45,734 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:06:59,691 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+29 Mar 2023 00:06:59,691 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:06:59,692 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:06:59,692 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:06:59,693 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:06:59,693 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:06:59,823 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@14fd950)
+29 Mar 2023 00:06:59,864 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+29 Mar 2023 00:06:59,865 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:06:59,865 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:06:59,865 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:06:59,865 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:06:59,865 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:06:59,866 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4906403e)
+29 Mar 2023 00:06:59,869 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+29 Mar 2023 00:07:21,241 TRACE org.example.repository.CaseDbRepository 27 findOne - Enter
+29 Mar 2023 00:07:21,241 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:07:21,242 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4906403e)
+29 Mar 2023 00:07:32,529 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+29 Mar 2023 00:07:32,529 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:07:32,529 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4906403e)
+29 Mar 2023 00:07:32,529 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+29 Mar 2023 00:07:35,847 TRACE org.example.repository.CaseDbRepository 27 findOne - Enter
+29 Mar 2023 00:07:35,848 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:07:35,848 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4906403e)
+29 Mar 2023 00:17:35,452 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:17:35,455 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:17:35,457 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:17:35,458 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:17:44,095 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+29 Mar 2023 00:17:44,096 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:17:44,096 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:17:44,096 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:17:44,096 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:17:44,097 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:17:44,226 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@14fd950)
+29 Mar 2023 00:17:44,269 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+29 Mar 2023 00:17:44,269 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:17:44,269 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:17:44,269 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:17:44,269 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:17:44,269 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:17:44,270 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4906403e)
+29 Mar 2023 00:17:44,272 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+29 Mar 2023 00:17:47,959 TRACE org.example.repository.CaseDbRepository 27 findOne - Enter
+29 Mar 2023 00:17:47,960 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:17:47,960 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4906403e)
+29 Mar 2023 00:17:47,986 TRACE org.example.repository.DonorDbRepository 87 getDonorsForCase - Enter
+29 Mar 2023 00:17:47,986 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:17:47,986 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:17:47,986 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:17:47,986 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:17:47,986 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:17:47,988 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1226e34f)
+29 Mar 2023 00:17:47,998 TRACE org.example.repository.DonorDbRepository 106 getDonorsForCase - Exit with([Donor{donorName='Maria Adam', donorAddress='Albac 16', donorPhoneNumber='0766432411'}, Donor{donorName='Carmina Pop', donorAddress='Mihai Eminescu 102', donorPhoneNumber='0742154399'}, Donor{donorName='Adrian Groza', donorAddress='Aurel Vlaicu 19', donorPhoneNumber='0726666123'}, Donor{donorName='Adrian Groza', donorAddress='Aurel Vlaicu 19', donorPhoneNumber='0726666123'}, Donor{donorName='Carmina Pop', donorAddress='Mihai Eminescu 102', donorPhoneNumber='0742154399'}, Donor{donorName='Carmina Pop', donorAddress='Mihai Eminescu 102', donorPhoneNumber='0742154399'}, Donor{donorName='Carmina Pop', donorAddress='Mihai Eminescu 102', donorPhoneNumber='0742154399'}, Donor{donorName='Carmina Pop', donorAddress='Mihai Eminescu 102', donorPhoneNumber='0742154399'}])
+29 Mar 2023 00:20:46,866 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:20:46,871 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:20:46,873 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:20:46,874 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:20:46,875 TRACE org.example.repository.DonorDbRepository 34 getAll - Enter
+29 Mar 2023 00:20:46,876 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:20:46,876 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:20:46,876 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:20:46,876 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:20:46,877 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:20:47,047 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@e4323f5)
+29 Mar 2023 00:20:47,056 TRACE org.example.repository.DonorDbRepository 52 getAll - Exit with([Donor{donorName='Maria Adam', donorAddress='Albac 16', donorPhoneNumber='0766432411'}, Donor{donorName='Carmina Pop', donorAddress='Mihai Eminescu 102', donorPhoneNumber='0742154399'}, Donor{donorName='Adrian Groza', donorAddress='Aurel Vlaicu 19', donorPhoneNumber='0726666123'}, Donor{donorName='Bogdan Marginean', donorAddress='Crizantemelor 1', donorPhoneNumber='0756900217'}, Donor{donorName='Marius Moldovan', donorAddress='Bucuresti 22', donorPhoneNumber='0754266798'}, Donor{donorName='Maria Turc', donorAddress='Rodnei 36', donorPhoneNumber='0756221395'}, Donor{donorName='Marius Moldovan', donorAddress='Bucuresti 22', donorPhoneNumber='0754266798'}])
+29 Mar 2023 00:21:03,765 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+29 Mar 2023 00:21:03,766 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:21:03,766 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:21:03,766 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:21:03,767 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:21:03,767 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:21:03,769 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@278eda6c)
+29 Mar 2023 00:21:03,810 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+29 Mar 2023 00:21:03,811 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:21:03,811 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:21:03,811 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:21:03,811 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:21:03,811 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:21:03,811 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@23c3ce10)
+29 Mar 2023 00:21:03,814 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+29 Mar 2023 00:21:06,622 TRACE org.example.repository.CaseDbRepository 27 findOne - Enter
+29 Mar 2023 00:21:06,622 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:21:06,623 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@23c3ce10)
+29 Mar 2023 00:21:06,645 TRACE org.example.repository.DonorDbRepository 86 getDonorsForCase - Enter
+29 Mar 2023 00:21:06,645 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:21:06,645 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@e4323f5)
+29 Mar 2023 00:21:06,645 TRACE org.example.repository.DonorDbRepository 105 getDonorsForCase - Exit with([Donor{donorName='Adrian Groza', donorAddress='Aurel Vlaicu 19', donorPhoneNumber='0726666123'}])
+29 Mar 2023 00:22:09,821 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:22:09,825 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:22:09,825 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:22:09,826 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:22:09,828 TRACE org.example.repository.DonorDbRepository 34 getAll - Enter
+29 Mar 2023 00:22:09,828 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:22:09,828 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:22:09,828 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:22:09,828 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:22:09,828 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:22:09,950 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@e4323f5)
+29 Mar 2023 00:22:09,957 TRACE org.example.repository.DonorDbRepository 52 getAll - Exit with([Donor{donorName='Maria Adam', donorAddress='Albac 16', donorPhoneNumber='0766432411'}, Donor{donorName='Carmina Pop', donorAddress='Mihai Eminescu 102', donorPhoneNumber='0742154399'}, Donor{donorName='Adrian Groza', donorAddress='Aurel Vlaicu 19', donorPhoneNumber='0726666123'}, Donor{donorName='Bogdan Marginean', donorAddress='Crizantemelor 1', donorPhoneNumber='0756900217'}, Donor{donorName='Marius Moldovan', donorAddress='Bucuresti 22', donorPhoneNumber='0754266798'}, Donor{donorName='Maria Turc', donorAddress='Rodnei 36', donorPhoneNumber='0756221395'}, Donor{donorName='Marius Moldovan', donorAddress='Bucuresti 22', donorPhoneNumber='0754266798'}])
+29 Mar 2023 00:22:49,850 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:22:49,853 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:22:49,854 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:22:49,855 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:22:57,239 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+29 Mar 2023 00:22:57,239 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:22:57,239 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:22:57,239 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:22:57,240 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:22:57,240 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:22:57,367 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@14fd950)
+29 Mar 2023 00:22:57,410 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+29 Mar 2023 00:22:57,410 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:22:57,410 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:22:57,410 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:22:57,410 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:22:57,411 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:22:57,411 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4906403e)
+29 Mar 2023 00:22:57,413 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+29 Mar 2023 00:23:01,881 TRACE org.example.repository.CaseDbRepository 27 findOne - Enter
+29 Mar 2023 00:23:01,882 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:23:01,882 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4906403e)
+29 Mar 2023 00:23:01,904 TRACE org.example.repository.DonorDbRepository 34 getAll - Enter
+29 Mar 2023 00:23:01,904 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:23:01,905 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:23:01,905 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:23:01,905 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:23:01,905 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:23:01,906 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@638b7d4c)
+29 Mar 2023 00:23:01,907 TRACE org.example.repository.DonorDbRepository 52 getAll - Exit with([Donor{donorName='Maria Adam', donorAddress='Albac 16', donorPhoneNumber='0766432411'}, Donor{donorName='Carmina Pop', donorAddress='Mihai Eminescu 102', donorPhoneNumber='0742154399'}, Donor{donorName='Adrian Groza', donorAddress='Aurel Vlaicu 19', donorPhoneNumber='0726666123'}, Donor{donorName='Bogdan Marginean', donorAddress='Crizantemelor 1', donorPhoneNumber='0756900217'}, Donor{donorName='Marius Moldovan', donorAddress='Bucuresti 22', donorPhoneNumber='0754266798'}, Donor{donorName='Maria Turc', donorAddress='Rodnei 36', donorPhoneNumber='0756221395'}, Donor{donorName='Marius Moldovan', donorAddress='Bucuresti 22', donorPhoneNumber='0754266798'}])
+29 Mar 2023 00:26:24,607 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:26:24,609 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:26:24,612 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:26:24,613 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:26:33,615 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+29 Mar 2023 00:26:33,616 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:26:33,616 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:26:33,617 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:26:33,617 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:26:33,618 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:26:33,741 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@14fd950)
+29 Mar 2023 00:26:33,776 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+29 Mar 2023 00:26:33,776 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:26:33,776 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:26:33,776 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:26:33,776 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:26:33,776 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:26:33,777 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4906403e)
+29 Mar 2023 00:26:33,779 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+29 Mar 2023 00:26:36,601 TRACE org.example.repository.CaseDbRepository 27 findOne - Enter
+29 Mar 2023 00:26:36,601 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:26:36,602 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4906403e)
+29 Mar 2023 00:26:36,625 TRACE org.example.repository.DonorDbRepository 34 getAll - Enter
+29 Mar 2023 00:26:36,626 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:26:36,626 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:26:36,626 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:26:36,626 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:26:36,626 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:26:36,626 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@73bb50d5)
+29 Mar 2023 00:26:36,629 TRACE org.example.repository.DonorDbRepository 52 getAll - Exit with([Donor{donorName='Maria Adam', donorAddress='Albac 16', donorPhoneNumber='0766432411'}, Donor{donorName='Carmina Pop', donorAddress='Mihai Eminescu 102', donorPhoneNumber='0742154399'}, Donor{donorName='Adrian Groza', donorAddress='Aurel Vlaicu 19', donorPhoneNumber='0726666123'}, Donor{donorName='Bogdan Marginean', donorAddress='Crizantemelor 1', donorPhoneNumber='0756900217'}, Donor{donorName='Marius Moldovan', donorAddress='Bucuresti 22', donorPhoneNumber='0754266798'}, Donor{donorName='Maria Turc', donorAddress='Rodnei 36', donorPhoneNumber='0756221395'}, Donor{donorName='Marius Moldovan', donorAddress='Bucuresti 22', donorPhoneNumber='0754266798'}])
+29 Mar 2023 00:30:19,955 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:30:19,958 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:30:19,959 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:30:19,960 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:30:28,126 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+29 Mar 2023 00:30:28,126 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:30:28,126 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:30:28,127 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:30:28,127 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:30:28,127 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:30:28,242 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@14fd950)
+29 Mar 2023 00:30:28,284 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+29 Mar 2023 00:30:28,284 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:30:28,284 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:30:28,284 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:30:28,285 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:30:28,285 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:30:28,285 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4906403e)
+29 Mar 2023 00:30:28,290 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+29 Mar 2023 00:30:31,048 TRACE org.example.repository.CaseDbRepository 27 findOne - Enter
+29 Mar 2023 00:30:31,049 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:30:31,049 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4906403e)
+29 Mar 2023 00:30:31,072 TRACE org.example.repository.DonorDbRepository 34 getAll - Enter
+29 Mar 2023 00:30:31,072 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:30:31,072 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:30:31,072 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:30:31,073 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:30:31,073 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:30:31,073 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@73bb50d5)
+29 Mar 2023 00:30:31,074 TRACE org.example.repository.DonorDbRepository 52 getAll - Exit with([Donor{donorName='Maria Adam', donorAddress='Albac 16', donorPhoneNumber='0766432411'}, Donor{donorName='Carmina Pop', donorAddress='Mihai Eminescu 102', donorPhoneNumber='0742154399'}, Donor{donorName='Adrian Groza', donorAddress='Aurel Vlaicu 19', donorPhoneNumber='0726666123'}, Donor{donorName='Bogdan Marginean', donorAddress='Crizantemelor 1', donorPhoneNumber='0756900217'}, Donor{donorName='Marius Moldovan', donorAddress='Bucuresti 22', donorPhoneNumber='0754266798'}, Donor{donorName='Maria Turc', donorAddress='Rodnei 36', donorPhoneNumber='0756221395'}, Donor{donorName='Marius Moldovan', donorAddress='Bucuresti 22', donorPhoneNumber='0754266798'}])
+29 Mar 2023 00:34:55,656 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:34:55,659 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:34:55,661 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:34:55,661 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:35:09,651 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+29 Mar 2023 00:35:09,652 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:35:09,652 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:35:09,652 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:35:09,653 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:35:09,653 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:35:09,790 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@14fd950)
+29 Mar 2023 00:35:09,832 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+29 Mar 2023 00:35:09,832 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:35:09,833 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:35:09,833 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:35:09,833 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:35:09,833 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:35:09,834 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4906403e)
+29 Mar 2023 00:35:09,838 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+29 Mar 2023 00:35:13,386 TRACE org.example.repository.CaseDbRepository 27 findOne - Enter
+29 Mar 2023 00:35:13,387 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:35:13,387 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4906403e)
+29 Mar 2023 00:35:13,409 TRACE org.example.repository.DonorDbRepository 34 getAll - Enter
+29 Mar 2023 00:35:13,410 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:35:13,410 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:35:13,410 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:35:13,410 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:35:13,410 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:35:13,411 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3ac546ab)
+29 Mar 2023 00:35:13,412 TRACE org.example.repository.DonorDbRepository 52 getAll - Exit with([Donor{donorName='Maria Adam', donorAddress='Albac 16', donorPhoneNumber='0766432411'}, Donor{donorName='Carmina Pop', donorAddress='Mihai Eminescu 102', donorPhoneNumber='0742154399'}, Donor{donorName='Adrian Groza', donorAddress='Aurel Vlaicu 19', donorPhoneNumber='0726666123'}, Donor{donorName='Bogdan Marginean', donorAddress='Crizantemelor 1', donorPhoneNumber='0756900217'}, Donor{donorName='Marius Moldovan', donorAddress='Bucuresti 22', donorPhoneNumber='0754266798'}, Donor{donorName='Maria Turc', donorAddress='Rodnei 36', donorPhoneNumber='0756221395'}, Donor{donorName='Marius Moldovan', donorAddress='Bucuresti 22', donorPhoneNumber='0754266798'}])
+29 Mar 2023 00:54:06,433 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:54:06,437 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:54:06,438 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:54:06,439 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:54:16,643 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+29 Mar 2023 00:54:16,643 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:54:16,644 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:54:16,644 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:54:16,644 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:54:16,644 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:54:16,775 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@342df32f)
+29 Mar 2023 00:54:16,817 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+29 Mar 2023 00:54:16,818 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:54:16,818 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:54:16,818 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:54:16,818 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:54:16,818 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:54:16,819 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@61b1d27b)
+29 Mar 2023 00:54:16,823 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+29 Mar 2023 00:54:19,365 TRACE org.example.repository.CaseDbRepository 27 findOne - Enter
+29 Mar 2023 00:54:19,366 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:54:19,366 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@61b1d27b)
+29 Mar 2023 00:54:19,389 TRACE org.example.repository.DonorDbRepository 34 getAll - Enter
+29 Mar 2023 00:54:19,389 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:54:19,389 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:54:19,390 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:54:19,390 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:54:19,390 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:54:19,390 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4adb054e)
+29 Mar 2023 00:54:19,391 TRACE org.example.repository.DonorDbRepository 52 getAll - Exit with([Donor{donorName='Maria Adam', donorAddress='Albac 16', donorPhoneNumber='0766432411'}, Donor{donorName='Carmina Pop', donorAddress='Mihai Eminescu 102', donorPhoneNumber='0742154399'}, Donor{donorName='Adrian Groza', donorAddress='Aurel Vlaicu 19', donorPhoneNumber='0726666123'}, Donor{donorName='Bogdan Marginean', donorAddress='Crizantemelor 1', donorPhoneNumber='0756900217'}, Donor{donorName='Marius Moldovan', donorAddress='Bucuresti 22', donorPhoneNumber='0754266798'}, Donor{donorName='Maria Turc', donorAddress='Rodnei 36', donorPhoneNumber='0756221395'}, Donor{donorName='Marius Moldovan', donorAddress='Bucuresti 22', donorPhoneNumber='0754266798'}])
+29 Mar 2023 00:54:31,067 TRACE org.example.repository.DonorDbRepository 110 findByName - Enter
+29 Mar 2023 00:54:31,067 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:54:31,068 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4adb054e)
+29 Mar 2023 00:54:31,082 TRACE org.example.repository.DonationDbRepository 56 add - Enter saving donation Donation{idCase=3, idDonor=1, amount=999.0} 
+29 Mar 2023 00:54:31,083 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:54:31,083 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:54:31,083 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:54:31,084 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:54:31,084 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:54:31,085 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1917d9fc)
+29 Mar 2023 00:54:31,095 TRACE org.example.repository.DonationDbRepository 63 add - Saved 1 instances
+29 Mar 2023 00:54:31,095 TRACE org.example.repository.DonationDbRepository 68 add - Exit
+29 Mar 2023 00:55:38,415 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:55:38,418 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:55:38,419 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:55:38,420 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:57:10,071 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:57:10,077 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:57:10,079 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:57:10,080 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 00:57:19,628 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+29 Mar 2023 00:57:19,629 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:57:19,629 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:57:19,629 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:57:19,629 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:57:19,630 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:57:19,761 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@14fd950)
+29 Mar 2023 00:57:19,802 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+29 Mar 2023 00:57:19,803 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:57:19,803 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:57:19,803 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:57:19,803 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:57:19,803 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:57:19,804 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4906403e)
+29 Mar 2023 00:57:19,808 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+29 Mar 2023 00:57:22,212 TRACE org.example.repository.CaseDbRepository 27 findOne - Enter
+29 Mar 2023 00:57:22,212 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:57:22,213 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4906403e)
+29 Mar 2023 00:57:22,236 TRACE org.example.repository.DonorDbRepository 34 getAll - Enter
+29 Mar 2023 00:57:22,236 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:57:22,236 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:57:22,236 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:57:22,236 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:57:22,236 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:57:22,237 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3ac546ab)
+29 Mar 2023 00:57:22,238 TRACE org.example.repository.DonorDbRepository 52 getAll - Exit with([Donor{donorName='Maria Adam', donorAddress='Albac 16', donorPhoneNumber='0766432411'}, Donor{donorName='Carmina Pop', donorAddress='Mihai Eminescu 102', donorPhoneNumber='0742154399'}, Donor{donorName='Adrian Groza', donorAddress='Aurel Vlaicu 19', donorPhoneNumber='0726666123'}, Donor{donorName='Bogdan Marginean', donorAddress='Crizantemelor 1', donorPhoneNumber='0756900217'}, Donor{donorName='Marius Moldovan', donorAddress='Bucuresti 22', donorPhoneNumber='0754266798'}, Donor{donorName='Maria Turc', donorAddress='Rodnei 36', donorPhoneNumber='0756221395'}, Donor{donorName='Marius Moldovan', donorAddress='Bucuresti 22', donorPhoneNumber='0754266798'}])
+29 Mar 2023 00:58:03,982 TRACE org.example.repository.DonorDbRepository 110 findByName - Enter
+29 Mar 2023 00:58:03,982 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:58:03,983 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3ac546ab)
+29 Mar 2023 00:58:03,985 TRACE org.example.repository.DonorDbRepository 129 findByName - Exit
+29 Mar 2023 00:58:03,986 TRACE org.example.repository.DonorDbRepository 58 add - Enter saving donor Donor{donorName='Sabina Muresan', donorAddress='Rodnei 46', donorPhoneNumber='0758299795'} 
+29 Mar 2023 00:58:03,986 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:58:03,986 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3ac546ab)
+29 Mar 2023 00:58:04,006 TRACE org.example.repository.DonorDbRepository 65 add - Saved 1 instances
+29 Mar 2023 00:58:04,007 TRACE org.example.repository.DonorDbRepository 70 add - Exit
+29 Mar 2023 00:58:04,009 TRACE org.example.repository.DonationDbRepository 56 add - Enter saving donation Donation{idCase=3, idDonor=0, amount=2000.0} 
+29 Mar 2023 00:58:04,010 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 00:58:04,010 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 00:58:04,010 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 00:58:04,010 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 00:58:04,010 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 00:58:04,016 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5fc93296)
+29 Mar 2023 00:58:04,023 TRACE org.example.repository.DonationDbRepository 63 add - Saved 1 instances
+29 Mar 2023 00:58:04,024 TRACE org.example.repository.DonationDbRepository 68 add - Exit
+29 Mar 2023 01:20:30,393 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:20:30,398 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:20:30,400 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:20:30,400 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:20:30,403 TRACE org.example.repository.DonorDbRepository 58 add - Enter saving donor Donor{donorName='Liam Moldovan', donorAddress='Costache Negruzzi 5', donorPhoneNumber='0756221112'} 
+29 Mar 2023 01:20:30,403 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 01:20:30,403 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 01:20:30,403 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 01:20:30,403 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 01:20:30,404 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 01:20:30,571 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@575632c3)
+29 Mar 2023 01:20:30,577 ERROR org.example.repository.DonorDbRepository 76 add - java.sql.SQLException: Query returns results
+29 Mar 2023 01:20:30,578 TRACE org.example.repository.DonorDbRepository 79 add - Exit
+29 Mar 2023 01:20:55,885 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:20:55,888 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:20:55,889 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:20:55,890 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:20:55,892 TRACE org.example.repository.DonorDbRepository 58 add - Enter saving donor Donor{donorName='Liam Moldovan', donorAddress='Costache Negruzzi 5', donorPhoneNumber='0756221112'} 
+29 Mar 2023 01:20:55,892 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 01:20:55,892 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 01:20:55,892 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 01:20:55,893 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 01:20:55,893 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 01:20:56,025 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@575632c3)
+29 Mar 2023 01:20:56,030 ERROR org.example.repository.DonorDbRepository 76 add - java.sql.SQLException: Query returns results
+29 Mar 2023 01:20:56,030 TRACE org.example.repository.DonorDbRepository 79 add - Exit
+29 Mar 2023 01:21:52,025 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:21:52,030 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:21:52,031 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:21:52,032 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:21:52,034 TRACE org.example.repository.DonorDbRepository 58 add - Enter saving donor Donor{donorName='Liam Moldovan', donorAddress='Costache Negruzzi 5', donorPhoneNumber='0756221112'} 
+29 Mar 2023 01:21:52,034 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 01:21:52,034 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 01:21:52,034 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 01:21:52,035 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 01:21:52,035 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 01:21:52,182 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@575632c3)
+29 Mar 2023 01:21:52,187 ERROR org.example.repository.DonorDbRepository 76 add - java.sql.SQLException: Query returns results
+29 Mar 2023 01:21:52,187 TRACE org.example.repository.DonorDbRepository 79 add - Exit
+29 Mar 2023 01:22:19,637 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:22:19,642 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:22:19,644 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:22:19,646 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:22:40,433 TRACE org.example.repository.DonorDbRepository 58 add - Enter saving donor Donor{donorName='Liam Moldovan', donorAddress='Costache Negruzzi 5', donorPhoneNumber='0756221112'} 
+29 Mar 2023 01:22:41,184 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 01:22:41,185 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 01:22:41,186 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 01:22:41,187 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 01:22:41,188 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 01:22:41,957 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2e41f586)
+29 Mar 2023 01:24:34,377 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:24:34,381 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:24:34,382 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:24:34,382 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:25:54,291 TRACE org.example.repository.DonorDbRepository 58 add - Enter saving donor Donor{donorName='Liam Moldovan', donorAddress='Costache Negruzzi 5', donorPhoneNumber='0756221112'} 
+29 Mar 2023 01:25:56,055 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 01:25:56,058 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 01:25:56,058 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 01:25:56,059 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 01:25:56,060 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 01:25:56,786 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2e41f586)
+29 Mar 2023 01:27:50,364 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:27:50,368 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:27:50,369 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:27:50,370 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:27:50,375 TRACE org.example.repository.DonorDbRepository 58 add - Enter saving donor Donor{donorName='Liam Moldovan', donorAddress='Costache Negruzzi 5', donorPhoneNumber='0756221112'} 
+29 Mar 2023 01:27:50,376 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 01:27:50,376 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 01:27:50,376 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 01:27:50,376 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 01:27:50,377 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 01:27:50,513 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@575632c3)
+29 Mar 2023 01:27:50,527 TRACE org.example.repository.DonorDbRepository 74 add - Saved 1 instances
+29 Mar 2023 01:27:50,527 TRACE org.example.repository.DonorDbRepository 79 add - Exit
+29 Mar 2023 01:28:11,761 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:28:11,765 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:28:11,767 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:28:11,768 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:28:20,198 TRACE org.example.repository.DonorDbRepository 58 add - Enter saving donor Donor{donorName='Liam Moldovan', donorAddress='Costache Negruzzi 5', donorPhoneNumber='0756221112'} 
+29 Mar 2023 01:28:23,624 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 01:28:23,625 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 01:28:23,625 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 01:28:23,626 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 01:28:23,626 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 01:28:24,393 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2e41f586)
+29 Mar 2023 01:28:30,513 TRACE org.example.repository.DonorDbRepository 74 add - Saved 1 instances
+29 Mar 2023 01:30:39,488 INFO  org.example.repository.CaseDbRepository 21 <init> - Initializing CaseDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:30:39,493 INFO  org.example.repository.DonationDbRepository 22 <init> - Initializing DonationDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:30:39,494 INFO  org.example.repository.DonorDbRepository 23 <init> - Initializing DonorDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:30:39,496 INFO  org.example.repository.VolunteerDbRepository 20 <init> - Initializing VolunteerDbRepository with properties: {jdbc.url=jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db}
+29 Mar 2023 01:30:39,497 TRACE org.example.repository.DonorDbRepository 58 add - Enter saving donor Donor{donorName='Liam Moldovan', donorAddress='Costache Negruzzi 5', donorPhoneNumber='0756221112'} 
+29 Mar 2023 01:30:39,498 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 01:30:39,498 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 01:30:39,498 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 01:30:39,498 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 01:30:39,498 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 01:30:39,643 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@575632c3)
+29 Mar 2023 01:30:39,655 TRACE org.example.repository.DonorDbRepository 65 add - Saved 1 instances
+29 Mar 2023 01:30:39,655 TRACE org.example.repository.DonorDbRepository 70 add - Exit
+29 Mar 2023 01:30:52,486 TRACE org.example.repository.VolunteerDbRepository 51 findAccount - Enter
+29 Mar 2023 01:30:52,486 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 01:30:52,487 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 01:30:52,487 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 01:30:52,487 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 01:30:52,488 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 01:30:52,494 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@474b674f)
+29 Mar 2023 01:30:52,536 TRACE org.example.repository.CaseDbRepository 51 getAll - Enter
+29 Mar 2023 01:30:52,537 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 01:30:52,537 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 01:30:52,537 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 01:30:52,537 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 01:30:52,537 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 01:30:52,538 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b08f53b)
+29 Mar 2023 01:30:52,540 TRACE org.example.repository.CaseDbRepository 68 getAll - Exit with([Case{caseName='ANOHELP', sum=3866.5}, Case{caseName='Salvati copiii', sum=8900.0}, Case{caseName='Helpmas', sum=10866.0}])
+29 Mar 2023 01:30:55,425 TRACE org.example.repository.CaseDbRepository 27 findOne - Enter
+29 Mar 2023 01:30:55,426 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 01:30:55,426 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b08f53b)
+29 Mar 2023 01:30:55,450 TRACE org.example.repository.DonorDbRepository 34 getAll - Enter
+29 Mar 2023 01:30:55,450 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 01:30:55,450 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@575632c3)
+29 Mar 2023 01:30:55,451 TRACE org.example.repository.DonorDbRepository 52 getAll - Exit with([Donor{donorName='Maria Adam', donorAddress='Albac 16', donorPhoneNumber='0766432411'}, Donor{donorName='Carmina Pop', donorAddress='Mihai Eminescu 102', donorPhoneNumber='0742154399'}, Donor{donorName='Adrian Groza', donorAddress='Aurel Vlaicu 19', donorPhoneNumber='0726666123'}, Donor{donorName='Bogdan Marginean', donorAddress='Crizantemelor 1', donorPhoneNumber='0756900217'}, Donor{donorName='Marius Moldovan', donorAddress='Bucuresti 22', donorPhoneNumber='0754266798'}, Donor{donorName='Maria Turc', donorAddress='Rodnei 36', donorPhoneNumber='0756221395'}, Donor{donorName='Liam Moldovan', donorAddress='Costache Negruzzi 5', donorPhoneNumber='0756221112'}, Donor{donorName='Liam Moldovan', donorAddress='Costache Negruzzi 5', donorPhoneNumber='0756221112'}, Donor{donorName='Liam Moldovan', donorAddress='Costache Negruzzi 5', donorPhoneNumber='0756221112'}])
+29 Mar 2023 01:31:17,542 TRACE org.example.repository.DonorDbRepository 110 findByName - Enter
+29 Mar 2023 01:31:17,543 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 01:31:17,543 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@575632c3)
+29 Mar 2023 01:31:17,544 TRACE org.example.repository.DonorDbRepository 129 findByName - Exit
+29 Mar 2023 01:31:17,545 TRACE org.example.repository.DonorDbRepository 58 add - Enter saving donor Donor{donorName='Sabina', donorAddress='Muresan', donorPhoneNumber='0758299795'} 
+29 Mar 2023 01:31:17,545 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 01:31:17,546 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@575632c3)
+29 Mar 2023 01:31:17,565 TRACE org.example.repository.DonorDbRepository 65 add - Saved 1 instances
+29 Mar 2023 01:31:17,565 TRACE org.example.repository.DonorDbRepository 70 add - Exit
+29 Mar 2023 01:31:17,565 TRACE org.example.repository.DonorDbRepository 110 findByName - Enter
+29 Mar 2023 01:31:17,565 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 01:31:17,566 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@575632c3)
+29 Mar 2023 01:31:17,568 TRACE org.example.repository.DonationDbRepository 56 add - Enter saving donation Donation{idCase=3, idDonor=28, amount=300.0} 
+29 Mar 2023 01:31:17,568 TRACE org.example.utils.JdbcUtils 46 getConnection - Enter
+29 Mar 2023 01:31:17,568 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+29 Mar 2023 01:31:17,568 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\UBB\Sem4\MPP\teledon.db
+29 Mar 2023 01:31:17,569 INFO  org.example.utils.JdbcUtils 29 getNewConnection - user: null
+29 Mar 2023 01:31:17,569 INFO  org.example.utils.JdbcUtils 30 getNewConnection - pass: null
+29 Mar 2023 01:31:17,574 TRACE org.example.utils.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@473a75c7)
+29 Mar 2023 01:31:17,583 TRACE org.example.repository.DonationDbRepository 63 add - Saved 1 instances
+29 Mar 2023 01:31:17,583 TRACE org.example.repository.DonationDbRepository 68 add - Exit

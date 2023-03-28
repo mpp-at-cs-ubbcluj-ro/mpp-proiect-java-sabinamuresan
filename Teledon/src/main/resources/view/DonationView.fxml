@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.DonationController">
+    <children>
+        <BorderPane prefHeight="401.0" prefWidth="600.0" style="-fx-background-color: #312f2f;">
+            <top>
+                <AnchorPane prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #312f2f; -fx-border-color: #84dccf;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label fx:id="usernameLabel" layoutX="438.0" layoutY="16.0" text="Name" textAlignment="CENTER" textFill="#84dccf">
+                            <font>
+                                <Font name="Book Antiqua Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="405.0" layoutY="15.0">
+                            <image>
+                                <Image url="@../drawable/profileUser.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="566.0" layoutY="15.0" onMouseClicked="#switchToLoginPage">
+                            <image>
+                                <Image url="@../drawable/logoutIcon.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="232.0" layoutY="12.0" text="New Donation" textFill="#c7c7c7">
+                            <font>
+                                <Font name="Book Antiqua Bold" size="20.0" />
+                            </font>
+                        </Label>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="14.0" layoutY="15.0" onMouseClicked="#switchToHomePage">
+                     <image>
+                        <Image url="@../drawable/backIcon.png" />
+                     </image>
+                  </ImageView>
+                    </children>
+                    <BorderPane.margin>
+                        <Insets />
+                    </BorderPane.margin>
+                </AnchorPane>
+            </top>
+            <center>
+                <AnchorPane prefHeight="200.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <AnchorPane fx:id="searchBar" prefHeight="43.0" prefWidth="600.0">
+                            <children>
+                                <TextField fx:id="searchField" layoutX="33.0" layoutY="16.0" prefHeight="25.0" prefWidth="566.0" promptText="Search for donors..." style="-fx-background-color: #312f2f; -fx-border-color: #84dccf; fx-text-fill: #84dccf; -fx-text-inner-color: #84dccf" />
+                                <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="4.0" layoutY="19.0">
+                                    <image>
+                                        <Image url="@../drawable/searchIcon.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                        <Button fx:id="addDonationButton" layoutX="234.0" layoutY="312.0" mnemonicParsing="false" onAction="#handleAddDonationButton" prefHeight="33.0" prefWidth="131.0" style="-fx-background-color: #84dccf; -fx-background-radius: 45;" text="Add Donation" textAlignment="CENTER" textFill="#312f2f">
+                            <font>
+                                <Font name="Book Antiqua" size="16.0" />
+                            </font>
+                        </Button>
+                  <ListView fx:id="donorsListView" layoutX="1.0" layoutY="51.0" onMouseClicked="#handleSelection" prefHeight="90.0" prefWidth="600.0" style="-fx-background-color: #312f2f; -fx-border-color: c7c7c7;" />
+                  <Label layoutX="30.0" layoutY="155.0" text="Case" textFill="#c7c7c7">
+                     <font>
+                        <Font name="Book Antiqua" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="185.0" text="Donor Name" textFill="#c7c7c7">
+                      <font>
+                          <Font name="Book Antiqua" size="16.0" />
+                      </font>
+                  </Label>
+                        <Label layoutX="30.0" layoutY="215.0" text="Donor Address" textFill="#c7c7c7">
+                            <font>
+                                <Font name="Book Antiqua" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="245.0" text="Donor Phone Number" textFill="#c7c7c7">
+                            <font>
+                                <Font name="Book Antiqua" size="16.0" />
+                            </font>
+                        </Label>
+                  <TextField fx:id="caseInput" layoutX="217.0" layoutY="153.0" opacity="0.2" prefHeight="10.0" prefWidth="300.0" />
+                  <TextField fx:id="nameInput" layoutX="217.0" layoutY="183.0" opacity="0.2" prefHeight="15.0" prefWidth="300.0" />
+                  <TextField fx:id="addressInput" layoutX="217.0" layoutY="213.0" opacity="0.2" prefHeight="15.0" prefWidth="300.0" />
+                  <TextField fx:id="phoneNumberInput" layoutX="217.0" layoutY="243.0" opacity="0.2" prefHeight="15.0" prefWidth="300.0" />
+                  <Label layoutX="30.0" layoutY="275.0" text="Sum" textFill="#c7c7c7">
+                     <font>
+                        <Font name="Book Antiqua" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="sumInput" layoutX="217.0" layoutY="273.0" opacity="0.2" prefHeight="15.0" prefWidth="300.0" />
+                    </children>
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+
+</AnchorPane>

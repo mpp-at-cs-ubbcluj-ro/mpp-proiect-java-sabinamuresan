@@ -5,5 +5,5 @@ import org.example.model.Donor;
 
 public interface IDonorRepository extends IRepository<Integer, Donor> {
     Iterable<Donor> getDonorsForCase(Case entity);
-    //todo caut dupa nume
+    Donor findByName(String donorName);
 }

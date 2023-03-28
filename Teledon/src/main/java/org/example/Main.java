@@ -28,5 +28,8 @@ public class Main {
         IDonorRepository donorRepository = new DonorDbRepository(props);
         donorRepository.add(new Donor(0, "Marius Moldovan", "Bucuresti 22", "0754266798"));
         donorRepository.getDonorsForCase(caseRepository.findOne(1)).forEach(out::println);
+        System.out.println(donorRepository.findByName("Carmina Pop"));
+        IVolunteerRepository volunteerRepository = new VolunteerDbRepository(props);
+        System.out.println(volunteerRepository.findAccount("sabinamuresan", "parola"));
     }
 }

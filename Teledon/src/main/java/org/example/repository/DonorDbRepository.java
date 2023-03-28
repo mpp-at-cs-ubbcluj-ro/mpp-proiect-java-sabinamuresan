@@ -31,7 +31,26 @@ public class DonorDbRepository implements IDonorRepository{
 
     @Override
     public Iterable<Donor> getAll() {
-        return null;
+        logger.traceEntry();
+        Connection con = dbUtils.getConnection();
+        List<Donor> donors = new ArrayList<>();
+        try(PreparedStatement ps = con.prepareStatement("SELECT * FROM Donors")){
+            try(ResultSet rs = ps.executeQuery()){
+                while(rs.next()){
+                    int id = rs.getInt("id");
+                    String name = rs.getString("name");
+                    String address = rs.getString("address");
+                    String phoneNumber = rs.getString("phone_number");
+                    Donor donor = new Donor(id, name, address, phoneNumber);
+                    donors.add(donor);
+                }
+            }
+        }catch(SQLException ex){
+            logger.error(ex);
+            System.err.println("Error DB: " + ex);
+        }
+        logger.traceExit(donors);
+        return donors;
     }
 
     @Override
@@ -85,5 +104,29 @@ public class DonorDbRepository implements IDonorRepository{
         }
         logger.traceExit(donors);
         return donors;
+    }
+
+    public Donor findByName(String name){
+        logger.traceEntry();
+        Connection con = dbUtils.getConnection();
+        try(PreparedStatement ps = con.prepareStatement("SELECT * FROM Donors WHERE name = ?")){
+            ps.setString(1, name);
+            try(ResultSet rs = ps.executeQuery()){
+                if(rs.next()){
+                    int id = rs.getInt("id");
+                    String donorName = rs.getString("name");
+                    String address = rs.getString("address");
+                    String phoneNumber = rs.getString("phone_number");
+
+                    Donor donor = new Donor(id, name, address, phoneNumber);
+                    return donor;
+                }
+            }
+        }catch (SQLException e){
+            logger.error(e);
+            System.err.println("Error DB " + e);
+        }
+        logger.traceExit();
+        return null;
     }
 }
