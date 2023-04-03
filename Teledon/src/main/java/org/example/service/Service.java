@@ -10,10 +10,10 @@ import org.example.repository.IDonorRepository;
 import org.example.repository.IVolunteerRepository;
 
 public class Service {
-    ICaseRepository caseRepository;
-    IDonationRepository donationRepository;
-    IDonorRepository donorRepository;
-    IVolunteerRepository volunteerRepository;
+    private ICaseRepository caseRepository;
+    private IDonationRepository donationRepository;
+    private IDonorRepository donorRepository;
+    private IVolunteerRepository volunteerRepository;
 
     public Service(ICaseRepository caseRepository, IDonationRepository donationRepository, IDonorRepository donorRepository, IVolunteerRepository volunteerRepository) {
         this.caseRepository = caseRepository;
@@ -35,6 +35,7 @@ public class Service {
     }
 
     public Donation addDonation(Donation donation){
+        updateSumInCase(donation.getIdCase(), donation.getAmount());
         return donationRepository.add(donation);
     }
 
@@ -55,5 +56,12 @@ public class Service {
 
     public Volunteer findVolunteerAccount(String username, String password){
         return volunteerRepository.findAccount(username, password);
+    }
+
+    public void updateSumInCase(int caseId, float amount){
+        Case myCase = findOneCase(caseId);
+        float sum = myCase.getSum();
+        sum += amount;
+        caseRepository.updateSum(caseId, sum);
     }
 }

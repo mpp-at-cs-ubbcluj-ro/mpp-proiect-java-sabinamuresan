@@ -83,4 +83,20 @@ public class CaseDbRepository implements ICaseRepository{
     public Case update(Case entity) {
         return null;
     }
+
+    @Override
+    public void updateSum(int id, float sum) {
+        logger.traceEntry();
+        Connection con = dbUtils.getConnection();
+        try(PreparedStatement ps = con.prepareStatement("UPDATE Cases SET sum=? WHERE id=?")) {
+            ps.setFloat(1, sum);
+            ps.setInt(2, id);
+            int result = ps.executeUpdate();
+            logger.trace("Saved {} instances", result);
+        }catch(SQLException ex){
+            logger.error(ex);
+            System.err.println("Error DB " + ex);
+        }
+        logger.traceExit();
+    }
 }
