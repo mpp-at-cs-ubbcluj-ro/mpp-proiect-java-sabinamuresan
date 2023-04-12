@@ -1,2 +1,8 @@
 rootProject.name = 'Teledon'
+include 'TeledonClient'
+include 'Model'
+include 'Persistence'
+include 'Services'
+include 'TeledonServer'
+include 'TeledonNetworking'
 
