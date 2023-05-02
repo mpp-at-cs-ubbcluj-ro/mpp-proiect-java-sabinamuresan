@@ -1,0 +1,66 @@
+syntax="proto3";
+package teledon.protocol;
+
+option java_package = "org.example.protobuffprotocol";
+option java_outer_classname = "TeledonProtobufs";
+
+message Volunteer{
+  int32 id=1;
+  string username=2;
+  string password=3;
+}
+
+message Case{
+  int32 caseId=1;
+  string name=2;
+  float sum=3;
+}
+
+message Donor{
+  int32 donorId=1;
+  string name=2;
+  string address=3;
+  string phoneNumber=4;
+}
+
+message Donation{
+  int32 donationId=1;
+  int32 caseId=2;
+  int32 donorId=3;
+  float amount=4;
+}
+
+message TeledonRequest {
+  enum Type {UNKNOWN=0; LOGIN = 1; LOGOUT = 2; GET_CASES = 3; GET_DONORS=4 ; ADD_DONATION=5; ADD_DONOR=6; GET_CASE=7; GET_DONOR_BY_NAME=8; UPDATE_SUM_IN_CASE=9;}
+
+  // Identifies which request is filled in.
+  Type type = 1;
+
+  // One of the following will be filled in, depending on the type.
+  Volunteer user = 2;
+  Case case = 3;
+  Donation donation = 4;
+  Donor donor = 5;
+  string donorName = 6;
+  int32 caseId = 7;
+  float amount = 8;
+  string username = 9;
+  string password = 10;
+}
+
+message TeledonResponse{
+  enum Type { UNKNOWN=0; OK = 1; ERROR = 2; MADE_DONATION=3; ADDED_DONOR = 4; GET_CASES = 5; GET_DONORS = 6;
+  GET_DONOR_BY_NAME = 7; GET_CASE = 8; GET_DONOR = 9; OK_LOGIN = 10;}
+
+  // Identifies which request is filled in.
+  Type type = 1;
+
+  // One of the following will be filled in, depending on the type.
+  string error = 2;
+  repeated Case cases=3;
+  repeated Donor donors=4;
+  Volunteer volunteer=5;
+  Donor donor=6;
+  Case case = 7;
+
+}

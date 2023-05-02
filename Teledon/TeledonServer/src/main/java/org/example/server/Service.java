@@ -61,7 +61,6 @@ public class Service implements IService {
             if(client != null){
                 executor.execute(() -> {
                     try{
-                        System.out.println("a intrat in addDonor (service din server)");
                         client.notifyDonorAdded(donor);
                     } catch (Exception e){
                         e.printStackTrace();

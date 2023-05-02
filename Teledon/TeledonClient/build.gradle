@@ -34,5 +34,5 @@ test {
 }
 
 application{
-    mainClass='org.example.StartApplicationFX'
+    mainClass='org.example.StartProtobuffClient'
 }

@@ -160,7 +160,8 @@ public class HomeController implements Initializable, IObserver {
         addDonationButton.setVisible(false);
     }
 
-    public void switchToLoginPage(MouseEvent event)throws IOException {
+    public void switchToLoginPage(MouseEvent event) throws IOException, TeledonException {
+        service.logout(ownerUser, this);
         FXMLLoader loader = new FXMLLoader(StartApplicationFX.class.getResource("/view/LoginView.fxml"));
         AnchorPane root = loader.load();
 

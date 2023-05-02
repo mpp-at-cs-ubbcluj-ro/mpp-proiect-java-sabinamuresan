@@ -17,6 +17,10 @@ public class Case extends Entity<Integer>{
         return sum;
     }
 
+    public void setSum(float sum){
+        this.sum = sum;
+    }
+
     public String getCaseName() {
         return caseName;
     }
